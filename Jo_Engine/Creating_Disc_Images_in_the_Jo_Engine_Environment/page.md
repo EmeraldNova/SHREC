@@ -7,7 +7,7 @@ Included in Jo Engine under directory ```\JO Engine\Compiler``` is a series of t
 
 ##  Windows
 
-In windows, you will be using the batch script files ```clean.bat```, ```compile.bat```, and a third batch file corresponding to the emulator of your choice for play testing. Each emulator will require different calls to run the resulting disc image. Yabause is the simplest emulator to use for beginners, and so ```run_with_yabause.bat``` is demonstrated, but it is not a recommended emulator. Once you have grasped how to utilize these scripts, it is recommended that you learn how to use a more reliable emulator (covered separately.)
+In windows, you will be using the batch script files ```clean.bat```, ```compile.bat```, and a third batch file corresponding to the emulator of your choice for play testing. Each emulator will require different calls to run the resulting disc image. Yabause is the simplest emulator to use for beginners, and so ```run_with_yabause.bat``` is demonstrated, however, it is not necessarily accureate and can sometimes have errors not present on hardware. Once you have grasped how to utilize these scripts, you may wish to use a more accurate emulator for testing (covered separately.)
 
 **```clean.bat```**:
 ```
