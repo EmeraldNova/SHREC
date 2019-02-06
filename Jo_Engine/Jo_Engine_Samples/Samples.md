@@ -1,6 +1,6 @@
 # Jo Engine Samples
 
-These are the sample codes wirtten by **Johannes Fetz** provided with [Jo Engine](../Jo_Engine.md) in ```\JO Engine\Samples```. Explanations for the code used are provided to provide further educational value.
+These are the sample codes wirtten by **Johannes Fetz** provided with [Jo Engine](../Jo_Engine.md) in ```\JO Engine\Samples```. Explanations for the code used are provided for further educational value.
 
 - demo - 2D storyboard
 - demo - 3D
