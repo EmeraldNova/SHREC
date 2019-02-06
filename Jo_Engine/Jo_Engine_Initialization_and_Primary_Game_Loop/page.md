@@ -1,7 +1,7 @@
 # Jo Engine Initialization and Primary Game Loop
 
 This example provides the bare essential code for running Jo Engine. For this you will need:
-- [Jo Engine](./Jo_Engine.md)
+- [Jo Engine](../Jo_Engine.md)
 - Creating Disc Images in the Jo Engine Environment
 
 ```
