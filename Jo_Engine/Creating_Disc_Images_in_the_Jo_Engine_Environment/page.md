@@ -58,3 +58,5 @@ echo Please compile first !
 Again, superflouous output is supressed in the first line. The Jo Engine emulator directory is ```SET```. The if statement chacks for the existence of the compiled iso, and displays a request to compile first if it can't be found. Yabause is called with flags ```-a``` and ```-i``` to run the image ```sl_coff.cue```. These flags are needed to run the image properly, so leave them be.
 
 For rapid prototyping, it may be prudent to create a single batch script that calls all three scripts in successsion.
+
+[Back](../Jo_Engine.md)
