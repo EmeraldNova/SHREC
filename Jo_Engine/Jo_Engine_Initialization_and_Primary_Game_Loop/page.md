@@ -4,7 +4,7 @@ This example provides the bare essential code for running Jo Engine. For this yo
 - [Jo Engine](../Jo_Engine.md)
 - [Creating Disc Images in the Jo Engine Environment](../Creating_Disc_Images_in_the_Jo_Engine_Environment/page.md)
 
-**```main.c```:
+**```main.c```:**
 ```
 /*
 ** Jo Sega Saturn Engine
