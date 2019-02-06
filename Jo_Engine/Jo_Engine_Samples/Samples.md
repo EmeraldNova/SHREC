@@ -16,7 +16,7 @@ These are the sample codes wirtten by **Johannes Fetz** provided with [Jo Engine
 - demo - map
 - demo - mode7
 - demo - paint
-- demo - printf
+- [demo - printf](demo_-_printf/page.md)
 - demo - shooter
 - demo - simple water effect
 - demo - sonic
