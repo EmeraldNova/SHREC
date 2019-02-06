@@ -1,7 +1,7 @@
 # Jo Engine Initialization and Primary Game Loop
 
 This example provides the bare essential code for running Jo Engine. For this you will need:
-- Jo Engine
+- [Jo Engine](./Jo_Engine.md)
 - Creating Disc Images in the Jo Engine Environment
 
 ```
@@ -65,5 +65,29 @@ The opening block comment giving the Copyright and Licensing agreement for Jo En
 
 When ```primary_loop()``` is called, the ```while(1)``` condition starts and, provided the program does not crash, never stops. For normal game operation, you will never want to exit or break this loop, as the Saturn will simple stop doing anything. For an "exit game" or "return to title" feature, games states should be used (covered separately.)
 
+The blank line at the end of the file is required by the compiler and should be retained.
+
+The make file, a necessary set of instructions for the compiler, is shown below.
+
+```
+JO_COMPILE_WITH_VIDEO_MODULE = 0
+JO_COMPILE_WITH_BACKUP_MODULE = 0
+JO_COMPILE_WITH_TGA_MODULE = 0
+JO_COMPILE_WITH_AUDIO_MODULE = 0
+JO_COMPILE_WITH_3D_MODULE = 0
+JO_COMPILE_WITH_PSEUDO_MODE7_MODULE = 0
+JO_COMPILE_WITH_EFFECTS_MODULE = 0
+JO_COMPILE_WITH_RAM_CARD_MODULE = 0
+JO_GLOBAL_MEMORY_SIZE_FOR_MALLOC = 262144
+JO_DEBUG = 0
+SRCS = main.c
+JO_ENGINE_SRC_DIR=../../jo_engine
+COMPILER_DIR=../../Compiler
+include $(COMPILER_DIR)/COMMON/jo_engine_makefile
+```
+
+Because this example is for only the most basic functionality, all optional modules are deactivated (set to ```0```.) The memory size setting ```JO_GLOBAL_MEMORY_SIZE_FOR_MALLOC = 262144``` is a value found by **XL2** that functions for his code, and is kept as a vestigial compatibility for any potential ```malloc()``` operations. ```SRCS``` tells the compiler which source files (.c) are to be included in the build. This is not necessary for header (.h) as the include statements (such as ```#include <jo/jo.h>```) are pulled in with source files. The final three lines give a directory structure to find the compiler and engine files required by the Jo Engine environment. As written, the code needs to be in a subdirectory two levels down from the parent. ```\JO Engine\Projects\[YOUR-CODE-FOLDER-NAME]``` is recommended as a working folder.
+
 This code should result in a black screen after startup.
 
+<img src="img1.jpg"/>
