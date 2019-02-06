@@ -1,7 +1,7 @@
 # Creating Disc Images in the Jo Engine Environment
 
 This page demonstrates a set of working batch files for cleaning files resulting from compilation, compiling code and writing to disc images, and running the resulting disc images in an emulator. For this, you will need.
-- [Jo Engine](../Jo_engine.md)
+- [Jo Engine](../Jo_Engine.md)
 
 Included in Jo Engine under directory ```\JO Engine\Compiler``` is a series of tools and a C compiler (via cygwn if on windows). These tools are utilized via scripts provided with example programs. Below are script files that will function when working in ```\JO Engine\Projects\[YOUR-CODE-FOLDER-NAME]```.
 
