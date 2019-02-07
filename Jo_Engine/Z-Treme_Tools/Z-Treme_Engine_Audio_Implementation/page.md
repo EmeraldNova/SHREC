@@ -18,16 +18,16 @@ By using an emulator, we can do almost everything we need for sound effects.
 
 The solution is the following : 
 
-1) Download an old Mac emulator (68K). I use BASILISK II : https://basilisk.cebix.net/ 
+1) Download an old Mac emulator (68K). I use BASILISK II : [https://basilisk.cebix.net/](https://basilisk.cebix.net/)
 
 2) Set your MAC OS 7 ROM
 
-3) Download the Sound Tools : https://antime.kapsi.fi/sega/docs.html 
+3) Download the Sound Tools : [https://antime.kapsi.fi/sega/docs.html](https://antime.kapsi.fi/sega/docs.html)
 
 4) Make sure you have .AIFF (Big endian) audio that you want to use. It will all be put in sound RAM (512 KB), so make sure you have no more than about 400 KB.
 
-5) Use the Tone Editor to create your tone data : https://antime.kapsi.fi/sega/files/ST-068-R1-042594.pdf 
-   You can also look at the SGL tutorial documentation (Page 2-8) to see how to use it : https://antime.kapsi.fi/sega/files/ST-237-R1-051795.pdf 
+5) Use the Tone Editor to create your tone data : [https://antime.kapsi.fi/sega/files/ST-068-R1-042594.pdf](https://antime.kapsi.fi/sega/files/ST-068-R1-042594.pdf)
+   You can also look at the SGL tutorial documentation (Page 2-8) to see how to use it : [https://antime.kapsi.fi/sega/files/ST-237-R1-051795.pdf](https://antime.kapsi.fi/sega/files/ST-237-R1-051795.pdf)
    Note that you should use only 1 bank (or switch banks ingame) and keep all the sounds in different layers. 
    YOU NEED to offset the base pitch! Your first value should be C4 (60) for both beginning and end in the layer section. 
    Each subsequent sound should increase that value by 1. 
