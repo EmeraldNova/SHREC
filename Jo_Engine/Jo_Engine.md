@@ -8,6 +8,6 @@ For examples using Jo Engine, it would be best to run test code in ```\JO Engine
 - [Creating Disc Images in the Jo Engine Environment](Creating_Disc_Images_in_the_Jo_Engine_Environment/page.md)
 - [Jo Engine Samples](Jo_Engine_Samples/Samples.md)
 - Hello World Print Statement
-- [Playing A Sound Effecy](Playing_A_Sound_Effect/page.md) (COntirbution by **Ponut64**)
+- [Playing A Sound Effecy](Playing_A_Sound_Effect/page.md) (Contirbution by **Ponut64**)
 
 [Back](../index.md)
