@@ -8,10 +8,10 @@ For examples using Jo Engine, it would be best to run test code in ```\JO Engine
 - [Creating Disc Images in the Jo Engine Environment](Creating_Disc_Images_in_the_Jo_Engine_Environment/page.md)
 - [Jo Engine Samples](Jo_Engine_Samples/Samples.md)
 - Hello World Print Statement
-- [Playing A Sound Effect](Playing_A_Sound_Effect/page.md) (Contirbution by **Ponut64**)
+- [Playing A Sound Effect](Playing_A_Sound_Effect/page.md) (Contribution by **Ponut64**)
 
 ##  Z-Treme Tools
 
-[Z-Treme Tools](Z-Treme_Tools/Z-Treme_Tools.md) is a set of tools developed by XL2 that build of SGL and Jo Engine.
+[Z-Treme Tools](Z-Treme_Tools/Z-Treme_Tools.md) is a set of tools developed by **XL2** that build of SGL and Jo Engine.
 
 [Back](../index.md)
