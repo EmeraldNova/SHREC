@@ -4,7 +4,7 @@
 
 The make file will need to tell Jo Engine to include SGL, Audio, and Dual CPU support.
 
-**```makefle```:**
+**```makefile```:**
 ```
 JO_COMPILE_USING_SGL = 1
 JO_COMPILE_WITH_AUDIO_MODULE = 1
@@ -13,13 +13,13 @@ JO_COMPILE_WITH_DUAL_CPU = 1
 ```
 
 The sound effects are .PCM files that are either 15.360 kHz or 30.720 kHz in bitrate. These bitrates are selected to come out to 1024 and 2048 bytes of sound information per frame, respectively. CD sectors are generally expected to be 2048 in size, so a fixed bitrate of either of these two values is recommended for a clean division of sound information in memory. The sound files are available below, and must be stored in the ```/CD/``` subdirectory of your project folder:
-- BSTEP.PCM (15.36 kHz)
-- BTN1.PCM (30.72 kHz)
-- J32.PCM (30.72 kHz)
-- JAM.PCM (15.36 kHz)
-- LSTEP.PCM (30.72 kHz)
-- RIFL.PCM (15.36 kHz)
-- RUMB.PCM (15.36 kHz)
+- [BSTEP.PCM](BSTEP.PCM) (15.36 kHz)
+- [BTN1.PCM](BTN1.PCM) (30.72 kHz)
+- [J32.PCM](J32.PCM) (30.72 kHz)
+- [JAM.PCM](JAM.PCM) (15.36 kHz)
+- [LSTEP.PCM](LSTEP.PCM) (30.72 kHz)
+- [RIFL.PCM](RIFL.PCM) (15.36 kHz)
+- [RUMB.PCM](RUMB.PCM) (15.36 kHz)
 
 The code consists of a single file with thre functions handling sound loading and processing, and a remaining five functions that handle file system loading and the game loop.
 
