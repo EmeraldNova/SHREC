@@ -21,7 +21,7 @@ The sound effects are .PCM files that are either 15.360 kHz or 30.720 kHz in bit
 - [RIFL.PCM](RIFL.PCM) (15.36 kHz)
 - [RUMB.PCM](RUMB.PCM) (15.36 kHz)
 
-The code consists of a single file with thre functions handling sound loading and processing, and a remaining five functions that handle file system loading and the game loop.
+The code consists of a single file with three functions handling sound loading and processing, and a remaining five functions that handle file system loading and the game loop.
 
 **```main.c```:**
 ```
@@ -400,5 +400,13 @@ void			jo_main(void){
 */
 
 ```
+
+```SNDRAM``` is set to point to the memory location of the Saturn's sound memory. ```PCMBUF1``` is a little bit further on in memory to where the sound cpu and processor can access it. This is the starting point of where sound will be stored. ```MAP_TO_SCSP()``` is defined to quickly provide memory addresses to store sounds that can be accessed by the sound cpu and processor.
+
+Pitch words are used to define the timing or bitrate for playback of the raw sound data. In this example, we are sticking to 30.720 KHz and 15.360 KHz sounds for the reasons explained  earlier. ```M3072KHZ``` is the pitch word for 30.720 KHz and ```S1536KHZ``` is that for 15.360 KHz.
+
+The CD sector size ```SECT_SIZE``` describes chunks of files being loaded into memory 2 KB (2048 Bytes) at a time. The Saturn CD bandwidth is 300 KB/s. ```RD_UNIT``` is the number of sectors loaded per frame. To be safe, we'll assume the hardware is loading a bit slower than 300 KB/s, say 240 KB/s, then 120 sectors can be loaded per segment. If we assume a frame rate of 30 FPS, this means 4 sectors loaded per frame. In practice, however, it seems that even division into 60 Hz operations (50 Hz for PAL systems) is especially agreeable with the Saturn and we can double that number to 8 without penalty to performance. ```RD_STEP`` is ```RD_UNIT``` in Bytes.
+
+```pcmdat``` is a struct for handling PCM data. ```active``` is true while loading the file, after which ```file_done``` is set to true to signal that the file is loaded. The PCM data is stored at ```dstAddress``` in memory. The file is indexed by ```fid```. The reamining properties facilitate playback. ```pitchword``` is one of the two defined pitch words. ```playsize``` gives the size of the file to playback so the program knows when to stop. ```loctbl``` is an unused property that defines how the sound data stored in memory is organized. ```segments``` gives the number of PCM buffer segments. ```playtimer``` tracks how long the sound has been playing. ```frames``` gives the number of frames it takes to play the sound. The 8 segments per frame gives 16 KB per frame, so the number of frames is the integer number of times 16 KB divides into the sound's file size.
 
 [Back](../Jo_Engine.md)
