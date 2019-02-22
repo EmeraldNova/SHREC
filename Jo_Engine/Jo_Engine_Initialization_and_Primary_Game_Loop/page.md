@@ -90,7 +90,7 @@ This code should result in a black screen after startup.
 
 <img src="img1.jpg"/>
 
-## Without A Callback (Standard Method)
+## Without A Callback (Alternate Method)
 
 **```main.c```:**
 ```
