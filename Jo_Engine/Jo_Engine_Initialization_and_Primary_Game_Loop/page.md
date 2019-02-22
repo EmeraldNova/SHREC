@@ -148,6 +148,6 @@ void jo_main(void)
 
 When ```primary_loop()``` is called, the ```while(1)``` condition starts and, provided the program does not crash, never stops. For normal game operation, you will never want to exit or break this loop, as the Saturn will simple stop doing anything. For an "exit game" or "return to title" feature, games states should be used (covered separately.)
 
-This approach, avoiding Jo Enging callbacks, is required for compatibility with [Z-Treme Tools](../Z-Treme_Tools/Z-Treme_Tools.md). This will, however, break certain functions such as ```jo_printf()``` and ```jo_get_ticks``` that rely on the callback sttructure.
+This approach, avoiding Jo Enging callbacks, is required for compatibility with [Z-Treme Tools](../Z-Treme_Tools/Z-Treme_Tools.md). This will, however, break certain functions such as ```jo_printf()``` and ```jo_get_ticks``` that rely on the callback sttructure. You will need to rely on the SGL equivalent functions in this case.
 
 [Back](../Jo_Engine.md)
